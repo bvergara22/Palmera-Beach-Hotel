@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Palmera Beach Hotel</title>
+<meta name="description" data-i18n="meta.desc" content="Hotel frente al mar en Manzanillo del Mar, Cartagena. Alojamiento, pasadías, restaurante y eventos a 30 metros de la playa, con piscina, rooftop y atardeceres sobre el Caribe.">
+<meta name="theme-color" content="#FBF9F4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#07202B" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://palmerabeachhotel.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CO">
+<meta property="og:title" content="Palmera Beach Hotel">
+<meta property="og:description" content="Alojamiento, pasadías, restaurante y eventos frente al mar en Manzanillo del Mar, Cartagena.">
+<meta property="og:image" content="assets/img/hero.jpg">
+
+<link rel="icon" href="assets/img/favicon.svg?v=3" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Hotel",
+  "name": "Palmera Beach Hotel",
+  "description": "Hotel frente al mar en Manzanillo del Mar, Cartagena. Alojamiento, pasadías, restaurante y eventos a 30 metros de la playa.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Vía Manzanillo del Mar",
+    "addressLocality": "Cartagena de Indias",
+    "addressRegion": "Bolívar",
+    "addressCountry": "CO"
+  },
+  "telephone": "+573161002891",
+  "image": "assets/img/hero.jpg",
+  "sameAs": ["https://www.instagram.com/palmerabhotel/"],
+  "aggregateRating": {"@type": "AggregateRating", "ratingValue": "3.9", "reviewCount": "201"},
+  "amenityFeature": [
+    {"@type": "LocationFeatureSpecification", "name": "Piscina", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Rooftop / terraza", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Restaurante Pal-Mar", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Wifi", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Parqueadero", "value": true}
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#hotel" data-i18n="a11y.skip">Saltar al contenido</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="header">
+  <div class="shell header-inner">
+    <a class="logo" href="#top" aria-label="Palmera Beach Hotel">
+      <span class="logo-name">Palmera</span>
+      <span class="logo-sub">Beach Hotel</span>
+    </a>
+
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="#hotel" data-i18n="nav.hotel">El hotel</a>
+      <a href="#planes" data-i18n="nav.planes">Planes</a>
+      <a href="#restaurante" data-i18n="nav.restaurante">Restaurante</a>
+      <a href="#galeria" data-i18n="nav.galeria">Galería</a>
+      <a href="#ubicacion" data-i18n="nav.ubicacion">Ubicación</a>
+    </nav>
+
+    <div class="header-right">
+      <div class="lang-switch" role="group" aria-label="Idioma / Language">
+        <button type="button" class="lang-btn is-active" data-lang="es">ES</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+      </div>
+
+      <a class="btn btn-pill btn-accent header-cta" href="#reservar" data-i18n="cta.quote">Cotizar ahora</a>
+
+      <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ MENÚ PANTALLA COMPLETA ============ -->
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Menú" hidden>
+  <div class="menu-bg" aria-hidden="true"></div>
+
+  <div class="menu-inner shell">
+    <div class="menu-top">
+      <a class="logo" href="#top" data-menu-close>
+        <span class="logo-name">Palmera</span>
+        <span class="logo-sub">Beach Hotel</span>
+      </a>
+      <button class="menu-close" id="menu-close" aria-label="Cerrar menú">
+        <span></span><span></span>
+      </button>
+    </div>
+
+    <nav class="menu-nav" aria-label="Menú principal">
+      <a href="#hotel" data-menu-close><i>01</i><span data-i18n="nav.hotel">El hotel</span></a>
+      <a href="#planes" data-menu-close><i>02</i><span data-i18n="nav.planes">Planes</span></a>
+      <a href="#restaurante" data-menu-close><i>03</i><span data-i18n="nav.restaurante">Restaurante</span></a>
+      <a href="#galeria" data-menu-close><i>04</i><span data-i18n="nav.galeria">Galería</span></a>
+      <a href="#ubicacion" data-menu-close><i>05</i><span data-i18n="nav.ubicacion">Ubicación</span></a>
+    </nav>
+
+    <div class="menu-foot">
+      <div class="menu-contact">
+        <p class="menu-label" data-i18n="menu.contact">Reservas</p>
+        <a href="https://wa.me/573161002891" target="_blank" rel="noopener">+57 316 100 2891</a>
+        <a href="https://www.instagram.com/palmerabhotel/" target="_blank" rel="noopener">@palmerabhotel</a>
+      </div>
+      <div class="menu-place">
+        <p class="menu-label" data-i18n="menu.where">Dónde estamos</p>
+        <p data-i18n="menu.address">Manzanillo del Mar, Cartagena</p>
+      </div>
+      <div class="menu-actions">
+        <div class="lang-switch lang-switch-menu" role="group" aria-label="Idioma / Language">
+          <button type="button" class="lang-btn is-active" data-lang="es">ES</button>
+          <span aria-hidden="true">/</span>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <a class="btn btn-pill btn-cream" href="#reservar" data-menu-close data-i18n="cta.quote">Cotizar ahora</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main id="top">
+
+  <!-- ============ HERO / CARRUSEL ============ -->
+  <section class="hero" id="inicio">
+    <h1 class="sr-only">Palmera Beach Hotel — hotel frente al mar en Manzanillo del Mar, Cartagena</h1>
+
+    <div class="hero-media">
+      <div class="hero-slide is-active"><img src="assets/img/about-casa.jpg" alt="" fetchpriority="high"></div>
+      <div class="hero-slide"><img src="assets/img/plan-pasadia.jpg" alt="" loading="lazy"></div>
+      <div class="hero-slide"><img src="assets/img/restaurante.jpg" alt="" loading="lazy"></div>
+      <div class="hero-slide"><img src="assets/img/plan-eventos.jpg" alt="" loading="lazy"></div>
+      <div class="hero-scrim"></div>
+    </div>
+
+    <div class="shell hero-content">
+      <p class="eyebrow reveal-up" data-i18n="hero.eyebrow">Manzanillo del Mar, Cartagena</p>
+
+      <div class="hero-copy">
+        <article class="hero-text is-active">
+          <p class="hero-kicker" data-i18n="hero.s1.kicker">Alojamiento</p>
+          <p class="hero-title"><span class="line"><span data-i18n="hero.s1.title">Tu próxima escapada empieza aquí.</span></span></p>
+          <p class="hero-lead" data-i18n="hero.s1.text">Deja atrás la rutina, despierta cerca del mar y regálate unos días para descansar como mereces.</p>
+        </article>
+        <article class="hero-text">
+          <p class="hero-kicker" data-i18n="hero.s2.kicker">Pasadía</p>
+          <p class="hero-title"><span class="line"><span data-i18n="hero.s2.title">No necesitas irte lejos para desconectarte.</span></span></p>
+          <p class="hero-lead" data-i18n="hero.s2.text">Cambia de ambiente, disfruta la piscina, comparte una buena comida y convierte un día cualquiera en un plan que sí provoca.</p>
+        </article>
+        <article class="hero-text">
+          <p class="hero-kicker" data-i18n="hero.s3.kicker">Restaurante</p>
+          <p class="hero-title"><span class="line"><span data-i18n="hero.s3.title">Hay planes que comienzan alrededor de una mesa.</span></span></p>
+          <p class="hero-lead" data-i18n="hero.s3.text">Sabores para disfrutar sin afán, un ambiente tropical y ese gusto de compartir algo rico en un lugar diferente.</p>
+        </article>
+        <article class="hero-text">
+          <p class="hero-kicker" data-i18n="hero.s4.kicker">Eventos</p>
+          <p class="hero-title"><span class="line"><span data-i18n="hero.s4.title">Hay momentos que merecen un lugar extraordinario.</span></span></p>
+          <p class="hero-lead" data-i18n="hero.s4.text">Desde cumpleaños y celebraciones especiales hasta bodas y encuentros privados, encuentra en Palmera el escenario para crear recuerdos que quieras volver a vivir.</p>
+        </article>
+      </div>
+
+      <div class="hero-actions reveal-up">
+        <a class="btn btn-pill btn-light" href="#reservar" data-i18n="cta.quote">Cotizar ahora</a>
+        <a class="btn btn-pill btn-ghost" href="#hotel" data-i18n="cta.know">Conocer el hotel</a>
+      </div>
+
+      <div class="hero-dots" id="hero-dots" role="tablist" aria-label="Carrusel"></div>
+    </div>
+
+    <!-- Barra de cotización -->
+    <div class="shell booking-shell" id="reservar">
+      <form class="booking" id="booking-form" autocomplete="off">
+        <div class="booking-field">
+          <label for="plan" data-i18n="booking.plan">Plan</label>
+          <div class="select-wrap">
+            <select id="plan" name="plan">
+              <option value="Alojamiento" data-i18n="plan.alojamiento">Alojamiento</option>
+              <option value="Pasadía" data-i18n="plan.pasadia">Pasadía</option>
+              <option value="Restaurante" data-i18n="plan.restaurante">Restaurante</option>
+              <option value="Cumpleaños" data-i18n="plan.cumpleanos">Cumpleaños</option>
+              <option value="Eventos" data-i18n="plan.eventos">Eventos</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="booking-field booking-dates">
+          <label for="llegada" data-i18n="booking.dates">Fechas</label>
+          <div class="dates">
+            <input type="date" id="llegada" name="llegada" aria-label="Fecha de llegada">
+            <span class="dates-sep" aria-hidden="true">—</span>
+            <input type="date" id="salida" name="salida" aria-label="Fecha de salida">
+          </div>
+          <span class="dates-placeholder" data-i18n="booking.datesPh">Llegada y salida</span>
+        </div>
+
+        <div class="booking-field">
+          <label for="huespedes" data-i18n="booking.guests">Personas</label>
+          <div class="select-wrap">
+            <select id="huespedes" name="huespedes">
+              <option>1</option><option selected>2</option><option>3</option>
+              <option>4</option><option>5</option><option>6</option>
+              <option>7</option><option>8</option><option>9</option><option>10+</option>
+            </select>
+          </div>
+        </div>
+
+        <button class="btn btn-pill btn-accent booking-submit" type="submit">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="ico-wa"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.39a9.9 9.9 0 0 0 4.74 1.21h.01c5.45 0 9.89-4.44 9.89-9.9 0-2.64-1.03-5.13-2.9-7A9.82 9.82 0 0 0 12.04 2Zm0 18.05h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.05-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.24 8.24Zm4.52-6.17c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.09-.17.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.43.06-.66.31-.22.25-.87.85-.87 2.07s.9 2.4 1.02 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29Z"/></svg>
+          <span data-i18n="cta.quote">Cotizar ahora</span>
+        </button>
+      </form>
+    </div>
+
+    <!-- Tira de servicios -->
+    <div class="shell">
+      <ul class="features" id="features">
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 8c2.5 0 2.5 2 5 2s2.5-2 5-2 2.5 2 5 2 2.5-2 5-2M2 14c2.5 0 2.5 2 5 2s2.5-2 5-2 2.5 2 5 2 2.5-2 5-2"/></svg>
+          <span data-i18n="feat.beach">A 30 m de la playa</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M5 20V9l7-5 7 5v11M9 20v-5h6v5"/><path d="M9 11.5h6"/></svg>
+          <span data-i18n="feat.rooftop">Rooftop / terraza</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3v8a2 2 0 0 0 2 2 2 2 0 0 0 2-2V3M8 13v8M16.5 3c-1.4 1.4-1.8 3.3-1.8 5.5 0 1.6.4 2.8 1.8 3.3V21"/></svg>
+          <span data-i18n="feat.resto">Restaurante Pal-Mar</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18c1.6 0 1.6 1.2 3.2 1.2S8.8 18 10.4 18s1.6 1.2 3.2 1.2S15.2 18 16.8 18s1.6 1.2 3.2 1.2M8 15V5.5A1.5 1.5 0 0 1 9.5 4h.2M16 15V5.5A1.5 1.5 0 0 0 14.5 4h-.2M8 8h8M8 11.5h8"/></svg>
+          <span data-i18n="feat.pool">Piscina</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 9a16 16 0 0 1 19 0M5.5 12.5a11.5 11.5 0 0 1 13 0M8.5 16a7 7 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1" fill="currentColor" stroke="none"/></svg>
+          <span data-i18n="feat.wifi">Wifi</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M9.5 17V7.5h3.2a2.9 2.9 0 0 1 0 5.8H9.5"/></svg>
+          <span data-i18n="feat.parking">Parqueadero</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ EL HOTEL ============ -->
+  <section class="about section" id="hotel">
+    <div class="shell about-grid">
+      <div class="about-text">
+        <h2 class="h-display words-reveal" data-i18n="about.title">El lugar que parece lejos, pero está en Cartagena.</h2>
+        <p class="lead reveal-up" data-i18n="about.lead">A pocos minutos de la ciudad, Manzanillo del Mar guarda otra velocidad. Aquí el plan es simple: playa, piscina, buena comida y una terraza para ver caer el sol.</p>
+        <ul class="about-list reveal-up">
+          <li data-i18n-html="about.li1"><strong>Alojamiento</strong> en habitaciones frescas, con aire y wifi.</li>
+          <li data-i18n-html="about.li2"><strong>Pasadías</strong> con piscina, playa y cocina del Caribe.</li>
+          <li data-i18n-html="about.li3"><strong>Eventos</strong> y celebraciones en el rooftop frente al mar.</li>
+        </ul>
+      </div>
+
+      <div class="about-media">
+        <figure class="about-img about-img-main parallax">
+          <img src="assets/img/about-casa.jpg" alt="La casa del hotel entre palmeras y buganvilias, con la piscina y la terraza de madera" loading="lazy">
+        </figure>
+        <figure class="about-img about-img-small parallax">
+          <img src="assets/img/about-detalle.jpg" alt="Hamaca de colores en la terraza del hotel" loading="lazy">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LOS ESPACIOS ============ -->
+  <section class="spaces section" id="espacios">
+    <div class="shell spaces-head">
+      <div>
+        <h2 class="h-display reveal-up" data-i18n="spaces.title">Los espacios</h2>
+        <p class="sub reveal-up" data-i18n="spaces.sub">Piscina, rooftop, playa y una casa llena de madera y color.</p>
+      </div>
+      <div class="carousel-nav">
+        <button class="round-btn" id="sp-prev" aria-label="Anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <button class="round-btn" id="sp-next" aria-label="Siguiente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+    </div>
+
+    <div class="spaces-track" id="spaces-track">
+      <article class="space-card">
+        <div class="space-img"><img src="assets/img/esp-piscina.jpg" alt="Piscina iluminada rodeada de deck de madera y palmeras" loading="lazy"></div>
+        <h3 data-i18n="sp1.title">La piscina</h3>
+        <p data-i18n="sp1.text">Rodeada de palmeras y deck de madera, a unos pasos de las habitaciones.</p>
+      </article>
+      <article class="space-card">
+        <div class="space-img"><img src="assets/img/esp-sol.jpg" alt="Hamaca en la terraza frente al mar durante el atardecer" loading="lazy"></div>
+        <h3 data-i18n="sp2.title">El rooftop</h3>
+        <p data-i18n="sp2.text">Terraza con hamacas y asoleadoras para ver caer el sol sin afán.</p>
+      </article>
+      <article class="space-card">
+        <div class="space-img"><img src="assets/img/esp-playa.jpg" alt="Cerca de madera en la arena con el mar al fondo" loading="lazy"></div>
+        <h3 data-i18n="sp3.title">La playa</h3>
+        <p data-i18n="sp3.text">A 30 metros, con el mar tranquilo de Manzanillo.</p>
+      </article>
+      <article class="space-card">
+        <div class="space-img"><img src="assets/img/esp-casa.jpg" alt="Terraza techada en madera y palma del hotel" loading="lazy"></div>
+        <h3 data-i18n="sp4.title">La casa</h3>
+        <p data-i18n="sp4.text">Madera, palma y color Caribe en cada rincón.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ PLANES ============ -->
+  <section class="plans section" id="planes">
+    <div class="shell plans-grid">
+      <div class="plans-left">
+        <p class="eyebrow reveal-up" data-i18n="plans.eyebrow">Planes</p>
+        <h2 class="h-display words-reveal" data-i18n="plans.title">Quédate una noche o ven solo por el día.</h2>
+
+        <div class="plan-tabs" role="tablist" aria-label="Planes del hotel">
+          <button class="plan-tab is-active" role="tab" aria-selected="true" aria-controls="panel-1" data-i18n="plan.alojamiento">Alojamiento<i class="dot" aria-hidden="true"></i></button>
+          <button class="plan-tab" role="tab" aria-selected="false" aria-controls="panel-2" data-i18n="plan.pasadia">Pasadía<i class="dot" aria-hidden="true"></i></button>
+          <button class="plan-tab" role="tab" aria-selected="false" aria-controls="panel-3" data-i18n="plan.cumpleanos">Cumpleaños<i class="dot" aria-hidden="true"></i></button>
+          <button class="plan-tab" role="tab" aria-selected="false" aria-controls="panel-4" data-i18n="plan.eventos">Eventos<i class="dot" aria-hidden="true"></i></button>
+        </div>
+      </div>
+
+      <div class="plans-right">
+        <article class="plan-panel is-active" id="panel-1" role="tabpanel">
+          <div class="plan-img"><img src="assets/img/plan-hospedaje.jpg" alt="Deck de madera junto a la piscina del hotel" loading="lazy"></div>
+          <div class="plan-body">
+            <h3 data-i18n="plan.alojamiento">Alojamiento</h3>
+            <p data-i18n="p1.text">Habitaciones acogedoras, la piscina, el rooftop y la playa a 30 metros. Puedes sumar la alimentación en el restaurante.</p>
+            <div class="plan-foot">
+              <p class="price" data-i18n-html="p1.price">Desde <strong>$150.000</strong> COP por noche</p>
+              <a class="btn btn-pill btn-accent" href="#" data-wa="Alojamiento" data-i18n="cta.quote">Cotizar ahora</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="plan-panel" id="panel-2" role="tabpanel" hidden>
+          <div class="plan-img"><img src="assets/img/plan-pasadia.jpg" alt="Cóctel junto a la piscina del hotel" loading="lazy"></div>
+          <div class="plan-body">
+            <h3 data-i18n="plan.pasadia">Pasadía</h3>
+            <p data-i18n="p2.text">Un día completo de piscina, rooftop y playa, con la carta del restaurante disponible todo el día.</p>
+            <div class="plan-foot">
+              <p class="price" data-i18n="price.ask">Consulta tarifas y disponibilidad</p>
+              <a class="btn btn-pill btn-accent" href="#" data-wa="Pasadía" data-i18n="cta.quote">Cotizar ahora</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="plan-panel" id="panel-3" role="tabpanel" hidden>
+          <div class="plan-img"><img src="assets/img/plan-cumpleanos.jpg" alt="Mesa decorada para una celebración en la terraza" loading="lazy"></div>
+          <div class="plan-body">
+            <h3 data-i18n="plan.cumpleanos">Cumpleaños</h3>
+            <p data-i18n="p3.text">Celebra frente al mar: decoración, cena en la terraza y la piscina para el grupo. Armamos el plan a tu medida.</p>
+            <div class="plan-foot">
+              <p class="price" data-i18n="price.ask">Consulta tarifas y disponibilidad</p>
+              <a class="btn btn-pill btn-accent" href="#" data-wa="Cumpleaños" data-i18n="cta.quote">Cotizar ahora</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="plan-panel" id="panel-4" role="tabpanel" hidden>
+          <div class="plan-img"><img src="assets/img/plan-eventos.jpg" alt="Evento con invitados en la terraza del hotel al atardecer" loading="lazy"></div>
+          <div class="plan-body">
+            <h3 data-i18n="plan.eventos">Eventos</h3>
+            <p data-i18n="p4.text">Bodas, encuentros privados y celebraciones en el rooftop frente al mar, con cocina propia y espacio para tus invitados.</p>
+            <div class="plan-foot">
+              <p class="price" data-i18n="price.ask">Consulta tarifas y disponibilidad</p>
+              <a class="btn btn-pill btn-accent" href="#" data-wa="Eventos" data-i18n="cta.quote">Cotizar ahora</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RESTAURANTE ============ -->
+  <section class="resto" id="restaurante">
+    <div class="resto-media parallax">
+      <img src="assets/img/restaurante.jpg" alt="Plato de pescado frito con arroz de coco, patacón y ensalada" loading="lazy">
+    </div>
+    <div class="shell">
+      <div class="resto-card reveal-up">
+        <h2 class="h-display" data-i18n-html="resto.title">Restaurante<br>Pal-Mar</h2>
+        <p data-i18n="resto.text">Cocina del Caribe servida en la terraza. Desayuno, almuerzo y cena para huéspedes y visitantes, con gaseosas y cerveza bien frías.</p>
+        <a class="link-arrow" href="#" data-wa="Restaurante" data-i18n="resto.link">Pedir la carta
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALERÍA ============ -->
+  <section class="gallery section" id="galeria">
+    <div class="shell">
+      <h2 class="h-display reveal-up" data-i18n="gallery.title">Así se vive Palmera</h2>
+
+      <div class="gallery-grid">
+        <figure class="g-item"><img src="assets/img/esp-sol.jpg" alt="Hamaca frente al mar al atardecer" loading="lazy"></figure>
+        <figure class="g-item"><img src="assets/img/ceviche.jpg" alt="Ceviche de camarón servido en el restaurante Pal-Mar" loading="lazy"></figure>
+        <figure class="g-item"><img src="assets/img/about-detalle.jpg" alt="Hamaca rosada en la terraza" loading="lazy"></figure>
+        <figure class="g-item"><img src="assets/img/esp-playa.jpg" alt="La playa de Manzanillo del Mar" loading="lazy"></figure>
+        <figure class="g-item"><img src="assets/img/esp-piscina.jpg" alt="La piscina iluminada de noche" loading="lazy"></figure>
+        <figure class="g-item"><img src="assets/img/palmera-vista.jpg" alt="Palmeras y vista al mar desde el hotel" loading="lazy"></figure>
+      </div>
+
+      <a class="link-arrow ig-link" href="https://www.instagram.com/palmerabhotel/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        <span data-i18n="gallery.link">Ver más en @palmerabhotel</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ RESEÑAS ============ -->
+  <section class="reviews section" id="resenas">
+    <div class="shell">
+      <p class="eyebrow center reveal-up" data-i18n="reviews.eyebrow">201 reseñas en Google</p>
+
+      <div class="reviews-stage" id="reviews-stage">
+        <blockquote class="review is-active">
+          <p data-i18n="rev1.text">“Buena ubicación frente al mar, con unos atardeceres espectaculares.”</p>
+          <footer><span class="author">Orlando Montes</span><span class="source" data-i18n="reviews.source">Reseña en Google</span></footer>
+        </blockquote>
+        <blockquote class="review">
+          <p data-i18n="rev2.text">“Buena atención, maravillosa vista y buen ambiente para relajarse.”</p>
+          <footer><span class="author">Marcela Camacho</span><span class="source" data-i18n="reviews.source">Reseña en Google</span></footer>
+        </blockquote>
+      </div>
+
+      <div class="review-dots" id="review-dots" role="tablist" aria-label="Reseñas"></div>
+    </div>
+  </section>
+
+  <!-- ============ UBICACIÓN ============ -->
+  <section class="location section" id="ubicacion">
+    <div class="shell location-grid">
+      <div class="location-text">
+        <h2 class="h-display reveal-up" data-i18n="location.title">Cómo llegar</h2>
+        <p class="lead reveal-up" data-i18n="location.lead">Estamos en Manzanillo del Mar, al norte de Cartagena, sigue el mapa y en minutos estás frente al mar.</p>
+
+        <dl class="facts reveal-up">
+          <div><dt data-i18n="location.address">Dirección</dt><dd>Vía Manzanillo del Mar, Cartagena, Bolívar</dd></div>
+          <div><dt>WhatsApp</dt><dd><a href="https://wa.me/573161002891" target="_blank" rel="noopener">+57 316 100 2891</a></dd></div>
+          <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/palmerabhotel/" target="_blank" rel="noopener">@palmerabhotel</a></dd></div>
+        </dl>
+
+        <a class="btn btn-pill btn-outline reveal-up" href="https://www.google.com/maps/dir/?api=1&destination=Hotel+Palmera+Beach+Cartagena" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l18-8-8 18-2-8-8-2Z"/></svg>
+          <span data-i18n="location.route">Abrir ruta en Google Maps</span>
+        </a>
+      </div>
+
+      <div class="location-map reveal-up">
+        <iframe title="Mapa de ubicación de Palmera Beach Hotel"
+          src="https://www.google.com/maps?q=Hotel%20Palmera%20Beach%20Cartagena&z=15&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA FINAL ============ -->
+  <section class="cta">
+    <div class="shell cta-inner">
+      <h2 class="h-display words-reveal" data-i18n-html="cta.title">El Caribe te espera.<br>Nosotros también.</h2>
+      <a class="btn btn-pill btn-cream btn-wide" href="#reservar" data-i18n="cta.book">Reserva ahora</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="shell footer-inner">
+    <a class="logo" href="#top">
+      <span class="logo-name">Palmera</span>
+      <span class="logo-sub">Beach Hotel</span>
+    </a>
+    <p class="copy">© <span id="year">2026</span> Palmera Beach Hotel. Manzanillo del Mar, Cartagena. <span class="rnt">RNT 276009</span></p>
+  </div>
+</footer>
+
+<!-- Botón flotante de WhatsApp -->
+<a class="wa-float" href="https://wa.me/573161002891" target="_blank" rel="noopener" aria-label="WhatsApp" id="wa-float">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.39a9.9 9.9 0 0 0 4.74 1.21h.01c5.45 0 9.89-4.44 9.89-9.9 0-2.64-1.03-5.13-2.9-7A9.82 9.82 0 0 0 12.04 2Zm0 18.05h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.05-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.24 8.24Zm4.52-6.17c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.09-.17.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.43.06-.66.31-.22.25-.87.85-.87 2.07s.9 2.4 1.02 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29Z"/></svg>
+</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="assets/js/i18n.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+/* =========================================================
+   Palmera Beach Hotel — textos en español e inglés
+   Para editar un texto, cámbialo aquí en los dos idiomas.
+   La clave se enlaza en el HTML con data-i18n="clave"
+   (o data-i18n-html="clave" cuando el texto lleva etiquetas).
+   ========================================================= */
+window.PALMERA_I18N = {
+
+  es: {
+    'meta.desc': 'Hotel frente al mar en Manzanillo del Mar, Cartagena. Alojamiento, pasadías, restaurante y eventos a 30 metros de la playa, con piscina, rooftop y atardeceres sobre el Caribe.',
+    'a11y.skip': 'Saltar al contenido',
+
+    'nav.hotel': 'El hotel',
+    'nav.planes': 'Planes',
+    'nav.restaurante': 'Restaurante',
+    'nav.galeria': 'Galería',
+    'nav.ubicacion': 'Ubicación',
+
+    'cta.quote': 'Cotizar ahora',
+    'cta.know': 'Conocer el hotel',
+    'cta.book': 'Reserva ahora',
+    'cta.title': 'El Caribe te espera.<br>Nosotros también.',
+
+    'menu.contact': 'Reservas',
+    'menu.where': 'Dónde estamos',
+    'menu.address': 'Manzanillo del Mar, Cartagena',
+
+    'hero.eyebrow': 'Manzanillo del Mar, Cartagena',
+    'hero.s1.kicker': 'Alojamiento',
+    'hero.s1.title': 'Tu próxima escapada empieza aquí.',
+    'hero.s1.text': 'Deja atrás la rutina, despierta cerca del mar y regálate unos días para descansar como mereces.',
+    'hero.s2.kicker': 'Pasadía',
+    'hero.s2.title': 'No necesitas irte lejos para desconectarte.',
+    'hero.s2.text': 'Cambia de ambiente, disfruta la piscina, comparte una buena comida y convierte un día cualquiera en un plan que sí provoca.',
+    'hero.s3.kicker': 'Restaurante',
+    'hero.s3.title': 'Hay planes que comienzan alrededor de una mesa.',
+    'hero.s3.text': 'Sabores para disfrutar sin afán, un ambiente tropical y ese gusto de compartir algo rico en un lugar diferente.',
+    'hero.s4.kicker': 'Eventos',
+    'hero.s4.title': 'Hay momentos que merecen un lugar extraordinario.',
+    'hero.s4.text': 'Desde cumpleaños y celebraciones especiales hasta bodas y encuentros privados, encuentra en Palmera el escenario para crear recuerdos que quieras volver a vivir.',
+
+    'booking.plan': 'Plan',
+    'booking.dates': 'Fechas',
+    'booking.datesPh': 'Llegada y salida',
+    'booking.guests': 'Personas',
+
+    'plan.alojamiento': 'Alojamiento',
+    'plan.pasadia': 'Pasadía',
+    'plan.restaurante': 'Restaurante',
+    'plan.cumpleanos': 'Cumpleaños',
+    'plan.eventos': 'Eventos',
+
+    'feat.beach': 'A 30 m de la playa',
+    'feat.rooftop': 'Rooftop / terraza',
+    'feat.resto': 'Restaurante Pal-Mar',
+    'feat.pool': 'Piscina',
+    'feat.wifi': 'Wifi',
+    'feat.parking': 'Parqueadero',
+
+    'about.title': 'El lugar que parece lejos, pero está en Cartagena.',
+    'about.lead': 'A pocos minutos de la ciudad, Manzanillo del Mar guarda otra velocidad. Aquí el plan es simple: playa, piscina, buena comida y una terraza para ver caer el sol.',
+    'about.li1': '<strong>Alojamiento</strong> en habitaciones frescas, con aire y wifi.',
+    'about.li2': '<strong>Pasadías</strong> con piscina, playa y cocina del Caribe.',
+    'about.li3': '<strong>Eventos</strong> y celebraciones en el rooftop frente al mar.',
+
+    'spaces.title': 'Los espacios',
+    'spaces.sub': 'Piscina, rooftop, playa y una casa llena de madera y color.',
+    'sp1.title': 'La piscina',
+    'sp1.text': 'Rodeada de palmeras y deck de madera, a unos pasos de las habitaciones.',
+    'sp2.title': 'El rooftop',
+    'sp2.text': 'Terraza con hamacas y asoleadoras para ver caer el sol sin afán.',
+    'sp3.title': 'La playa',
+    'sp3.text': 'A 30 metros, con el mar tranquilo de Manzanillo.',
+    'sp4.title': 'La casa',
+    'sp4.text': 'Madera, palma y color Caribe en cada rincón.',
+
+    'plans.eyebrow': 'Planes',
+    'plans.title': 'Quédate una noche o ven solo por el día.',
+    'p1.text': 'Habitaciones acogedoras, la piscina, el rooftop y la playa a 30 metros. Puedes sumar la alimentación en el restaurante.',
+    'p1.price': 'Desde <strong>$150.000</strong> COP por noche',
+    'p2.text': 'Un día completo de piscina, rooftop y playa, con la carta del restaurante disponible todo el día.',
+    'p3.text': 'Celebra frente al mar: decoración, cena en la terraza y la piscina para el grupo. Armamos el plan a tu medida.',
+    'p4.text': 'Bodas, encuentros privados y celebraciones en el rooftop frente al mar, con cocina propia y espacio para tus invitados.',
+    'price.ask': 'Consulta tarifas y disponibilidad',
+
+    'resto.title': 'Restaurante<br>Pal-Mar',
+    'resto.text': 'Cocina del Caribe servida en la terraza. Desayuno, almuerzo y cena para huéspedes y visitantes, con gaseosas y cerveza bien frías.',
+    'resto.link': 'Pedir la carta',
+
+    'gallery.title': 'Así se vive Palmera',
+    'gallery.link': 'Ver más en @palmerabhotel',
+
+    'reviews.eyebrow': '201 reseñas en Google',
+    'reviews.source': 'Reseña en Google',
+    'rev1.text': '“Buena ubicación frente al mar, con unos atardeceres espectaculares.”',
+    'rev2.text': '“Buena atención, maravillosa vista y buen ambiente para relajarse.”',
+
+    'location.title': 'Cómo llegar',
+    'location.lead': 'Estamos en Manzanillo del Mar, al norte de Cartagena, sigue el mapa y en minutos estás frente al mar.',
+    'location.address': 'Dirección',
+    'location.route': 'Abrir ruta en Google Maps',
+
+    /* Mensajes de WhatsApp */
+    'wa.greeting': 'Hola Palmera Beach Hotel, quiero cotizar.',
+    'wa.service': 'Servicio',
+    'wa.dates': 'Fechas',
+    'wa.people': 'Personas',
+    'wa.tbd': 'por definir',
+    'wa.to': 'a',
+    'wa.menu': 'Hola Palmera Beach Hotel, ¿me compartes la carta del restaurante Pal-Mar?',
+    'wa.float': 'Hola Palmera Beach Hotel, quiero información.'
+  },
+
+  en: {
+    'meta.desc': 'Beachfront hotel in Manzanillo del Mar, Cartagena. Rooms, day passes, restaurant and events 30 metres from the beach, with a pool, rooftop and Caribbean sunsets.',
+    'a11y.skip': 'Skip to content',
+
+    'nav.hotel': 'The hotel',
+    'nav.planes': 'Plans',
+    'nav.restaurante': 'Restaurant',
+    'nav.galeria': 'Gallery',
+    'nav.ubicacion': 'Location',
+
+    'cta.quote': 'Get a quote',
+    'cta.know': 'Discover the hotel',
+    'cta.book': 'Book now',
+    'cta.title': 'The Caribbean is waiting.<br>So are we.',
+
+    'menu.contact': 'Bookings',
+    'menu.where': 'Where we are',
+    'menu.address': 'Manzanillo del Mar, Cartagena',
+
+    'hero.eyebrow': 'Manzanillo del Mar, Cartagena',
+    'hero.s1.kicker': 'Stay',
+    'hero.s1.title': 'Your next escape starts here.',
+    'hero.s1.text': 'Leave the routine behind, wake up by the sea and give yourself a few days of the rest you deserve.',
+    'hero.s2.kicker': 'Day pass',
+    'hero.s2.title': 'You don’t have to go far to switch off.',
+    'hero.s2.text': 'Change the scenery, enjoy the pool, share a good meal and turn an ordinary day into a plan worth making.',
+    'hero.s3.kicker': 'Restaurant',
+    'hero.s3.title': 'Some plans begin around a table.',
+    'hero.s3.text': 'Caribbean flavours to enjoy slowly, a tropical setting and the pleasure of sharing something good somewhere different.',
+    'hero.s4.kicker': 'Events',
+    'hero.s4.title': 'Some moments deserve an extraordinary place.',
+    'hero.s4.text': 'From birthdays and special celebrations to weddings and private gatherings, Palmera is the setting for memories you will want to live again.',
+
+    'booking.plan': 'Plan',
+    'booking.dates': 'Dates',
+    'booking.datesPh': 'Check-in and check-out',
+    'booking.guests': 'People',
+
+    'plan.alojamiento': 'Stay',
+    'plan.pasadia': 'Day pass',
+    'plan.restaurante': 'Restaurant',
+    'plan.cumpleanos': 'Birthdays',
+    'plan.eventos': 'Events',
+
+    'feat.beach': '30 m from the beach',
+    'feat.rooftop': 'Rooftop / terrace',
+    'feat.resto': 'Pal-Mar restaurant',
+    'feat.pool': 'Pool',
+    'feat.wifi': 'Wi-Fi',
+    'feat.parking': 'Parking',
+
+    'about.title': 'The place that feels far away, but is still in Cartagena.',
+    'about.lead': 'A few minutes from the city, Manzanillo del Mar keeps a slower pace. The plan here is simple: beach, pool, good food and a terrace to watch the sun go down.',
+    'about.li1': '<strong>Rooms</strong> that stay cool, with air conditioning and Wi-Fi.',
+    'about.li2': '<strong>Day passes</strong> with pool, beach and Caribbean cooking.',
+    'about.li3': '<strong>Events</strong> and celebrations on the rooftop facing the sea.',
+
+    'spaces.title': 'The spaces',
+    'spaces.sub': 'Pool, rooftop, beach and a house full of wood and colour.',
+    'sp1.title': 'The pool',
+    'sp1.text': 'Surrounded by palm trees and a wooden deck, steps away from the rooms.',
+    'sp2.title': 'The rooftop',
+    'sp2.text': 'A terrace with hammocks and loungers to watch the sunset without rushing.',
+    'sp3.title': 'The beach',
+    'sp3.text': '30 metres away, with the calm sea of Manzanillo.',
+    'sp4.title': 'The house',
+    'sp4.text': 'Wood, palm and Caribbean colour in every corner.',
+
+    'plans.eyebrow': 'Plans',
+    'plans.title': 'Stay the night or come just for the day.',
+    'p1.text': 'Cosy rooms, the pool, the rooftop and the beach 30 metres away. You can add meals at the restaurant.',
+    'p1.price': 'From <strong>$150,000</strong> COP per night',
+    'p2.text': 'A full day of pool, rooftop and beach, with the restaurant menu available all day.',
+    'p3.text': 'Celebrate by the sea: decoration, dinner on the terrace and the pool for your group. We build the plan around you.',
+    'p4.text': 'Weddings, private gatherings and celebrations on the rooftop facing the sea, with our own kitchen and room for your guests.',
+    'price.ask': 'Ask about rates and availability',
+
+    'resto.title': 'Pal-Mar<br>Restaurant',
+    'resto.text': 'Caribbean cooking served on the terrace. Breakfast, lunch and dinner for guests and visitors, with ice-cold drinks and beer.',
+    'resto.link': 'Ask for the menu',
+
+    'gallery.title': 'Life at Palmera',
+    'gallery.link': 'See more on @palmerabhotel',
+
+    'reviews.eyebrow': '201 reviews on Google',
+    'reviews.source': 'Google review',
+    'rev1.text': '“Great location facing the sea, with spectacular sunsets.”',
+    'rev2.text': '“Great service, a wonderful view and a nice atmosphere to relax.”',
+
+    'location.title': 'How to get here',
+    'location.lead': 'We are in Manzanillo del Mar, north of Cartagena. Follow the map and in minutes you are facing the sea.',
+    'location.address': 'Address',
+    'location.route': 'Open the route in Google Maps',
+
+    /* WhatsApp messages */
+    'wa.greeting': 'Hello Palmera Beach Hotel, I would like a quote.',
+    'wa.service': 'Service',
+    'wa.dates': 'Dates',
+    'wa.people': 'People',
+    'wa.tbd': 'to be confirmed',
+    'wa.to': 'to',
+    'wa.menu': 'Hello Palmera Beach Hotel, could you share the Pal-Mar restaurant menu?',
+    'wa.float': 'Hello Palmera Beach Hotel, I would like some information.'
+  }
+};
