@@ -35,11 +35,11 @@
       var v = t(el.getAttribute('data-i18n'));
       if (!v) return;
       if (el.tagName === 'META') el.setAttribute('content', v);
-      else el.textContent = v;
+      else { el.textContent = v; el.removeAttribute('data-raw'); }
     });
     document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
       var v = t(el.getAttribute('data-i18n-html'));
-      if (v) el.innerHTML = v;
+      if (v) { el.innerHTML = v; el.removeAttribute('data-raw'); }
     });
 
     document.documentElement.lang = next === 'es' ? 'es-CO' : 'en';
@@ -234,13 +234,6 @@
     });
   });
 
-  var waFloat = document.getElementById('wa-float');
-  if (waFloat) {
-    waFloat.addEventListener('click', function (e) {
-      e.preventDefault();
-      window.open(waLink(t('wa.float')), '_blank', 'noopener');
-    });
-  }
 
   /* =========================================================
      6. Carrusel del hero
@@ -397,8 +390,10 @@
     wordTriggers = [];
 
     document.querySelectorAll('.words-reveal').forEach(function (title) {
-      if (title.querySelector('.w')) return;
-      title.innerHTML = title.innerHTML
+      // Guardamos el texto original la primera vez para poder volver a
+      // partirlo cuando cambia el idioma, sin anidar spans.
+      if (!title.hasAttribute('data-raw')) title.setAttribute('data-raw', title.innerHTML);
+      title.innerHTML = title.getAttribute('data-raw')
         .split(/(<br\s*\/?>)/i)
         .map(function (chunk) {
           if (/^<br/i.test(chunk)) return chunk;
@@ -407,9 +402,13 @@
         }).join('');
 
       var tw = gsap.to(title.querySelectorAll('.w'), {
-        color: getComputedStyle(title).getPropertyValue('color'),
-        stagger: .9, ease: 'none',
-        scrollTrigger: { trigger: title, start: 'top 88%', end: 'top 42%', scrub: true }
+        opacity: 1, stagger: .9, ease: 'none',
+        scrollTrigger: {
+          trigger: title, start: 'top 88%', end: 'top 42%', scrub: true,
+          // Si el título queda al final de la página y nunca se alcanza el
+          // punto final, igual lo dejamos completamente legible.
+          onLeave: function () { gsap.set(title.querySelectorAll('.w'), { opacity: 1 }); }
+        }
       });
       if (tw.scrollTrigger) wordTriggers.push(tw.scrollTrigger);
     });
