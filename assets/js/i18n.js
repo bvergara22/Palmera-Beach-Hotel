@@ -108,7 +108,6 @@ window.PALMERA_I18N = {
     'wa.tbd': 'por definir',
     'wa.to': 'a',
     'wa.menu': 'Hola Palmera Beach Hotel, ¿me compartes la carta del restaurante Pal-Mar?',
-    'wa.float': 'Hola Palmera Beach Hotel, quiero información.'
   },
 
   en: {
@@ -213,6 +212,5 @@ window.PALMERA_I18N = {
     'wa.tbd': 'to be confirmed',
     'wa.to': 'to',
     'wa.menu': 'Hello Palmera Beach Hotel, could you share the Pal-Mar restaurant menu?',
-    'wa.float': 'Hello Palmera Beach Hotel, I would like some information.'
   }
 };

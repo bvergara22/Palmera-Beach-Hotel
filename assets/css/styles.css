@@ -36,7 +36,6 @@
   --shadow:0 18px 50px -24px rgba(12,44,60,.4);
   --shadow-soft:0 10px 30px -18px rgba(12,44,60,.34);
 
-  --wa:#25D366;
   --radius:18px;
   --radius-lg:26px;
   --shell:1760px;
@@ -423,25 +422,17 @@ svg{fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-l
 
 /* ---------- Footer ---------- */
 .site-footer{background:var(--deep);color:var(--deep-ink);border-top:1px solid rgba(255,247,214,.14)}
-.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:26px;flex-wrap:wrap;padding-block:clamp(26px,3vw,44px) clamp(74px,7vw,96px)}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:26px;flex-wrap:wrap;padding-block:clamp(26px,3vw,44px)}
 .copy{font-size:.86rem;opacity:.72;text-align:right;max-width:46ch}
 .rnt{white-space:nowrap}
-
-/* ---------- WhatsApp flotante ---------- */
-.wa-float{
-  position:fixed;right:clamp(16px,2vw,32px);bottom:clamp(16px,2vw,32px);z-index:80;
-  width:60px;height:60px;border-radius:50%;background:var(--wa);color:#fff;
-  display:grid;place-items:center;box-shadow:0 12px 30px -10px rgba(18,140,70,.6);
-  transition:transform .35s var(--ease),box-shadow .35s;
-}
-.wa-float svg{width:32px;height:32px;fill:currentColor;stroke:none}
-.wa-float:hover{transform:scale(1.08) translateY(-2px)}
 
 /* ---------- Animaciones ---------- */
 .js-ready .reveal-up{opacity:0;transform:translateY(26px)}
 .js-ready .hero-title .line>span{transform:translateY(105%)}
 .hero-text.is-active .hero-title .line>span{transform:translateY(0)}
-.words-reveal .w{color:color-mix(in srgb, var(--ink) 24%, transparent)}
+/* Las palabras arrancan atenuadas y GSAP las lleva a opacidad 1.
+   Usamos opacity (no color) para que funcione sobre cualquier fondo. */
+.words-reveal .w{display:inline-block;opacity:.26}
 .js-ready .about-img,.js-ready .space-card,.js-ready .g-item,
 .js-ready .plans-right,.js-ready .location-map{opacity:0}
 
@@ -450,7 +441,7 @@ svg{fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-l
   *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
   .reveal-up,.js-ready .about-img,.js-ready .space-card,.js-ready .g-item,
   .js-ready .plans-right,.js-ready .location-map{opacity:1!important;transform:none!important}
-  .words-reveal .w{color:var(--ink)}
+  .words-reveal .w{opacity:1!important}
   .menu-bg{clip-path:inset(0)}
 }
 
