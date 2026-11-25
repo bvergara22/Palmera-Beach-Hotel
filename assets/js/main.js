@@ -93,6 +93,7 @@
   var menuClose = document.getElementById('menu-close');
   var menuItems = menu ? menu.querySelectorAll('.menu-nav a, .menu-foot > *') : [];
   var menuOpen = false;
+  var closeFallback = null;
   var menuTl = null;
 
   function openMenu() {
@@ -126,7 +127,17 @@
     burger.setAttribute('aria-expanded', 'false');
     document.body.classList.remove('no-scroll');
 
-    function done() { menu.hidden = true; menu.classList.remove('is-open'); }
+    function done() {
+      clearTimeout(closeFallback);
+      menu.hidden = true;
+      menu.classList.remove('is-open');
+    }
+
+    // Si la pestaña pasa a segundo plano, el navegador frena rAF y el
+    // onComplete de GSAP puede no llegar: sin esto quedaría una capa
+    // invisible a pantalla completa interceptando los clics.
+    clearTimeout(closeFallback);
+    closeFallback = setTimeout(done, 1200);
 
     if (hasGSAP && !reduced) {
       if (menuTl) menuTl.kill();
