@@ -136,10 +136,30 @@
     <h1 class="sr-only">Palmera Beach Hotel — hotel frente al mar en Manzanillo del Mar, Cartagena</h1>
 
     <div class="hero-media">
-      <div class="hero-slide is-active"><img src="assets/img/hero-alojamiento.jpg" alt="" fetchpriority="high"></div>
-      <div class="hero-slide"><img src="assets/img/hero-pasadia.jpg" alt="" loading="lazy"></div>
-      <div class="hero-slide"><img src="assets/img/hero-restaurante.jpg" alt="" loading="lazy"></div>
-      <div class="hero-slide"><img src="assets/img/hero-eventos.jpg" alt="" loading="lazy"></div>
+      <div class="hero-slide is-active">
+        <picture>
+          <source media="(max-width: 760px)" srcset="assets/img/hero-alojamiento-sm.jpg">
+          <img src="assets/img/hero-alojamiento.jpg" alt="" fetchpriority="high">
+        </picture>
+      </div>
+      <div class="hero-slide">
+        <picture>
+          <source media="(max-width: 760px)" srcset="assets/img/hero-pasadia-sm.jpg">
+          <img src="assets/img/hero-pasadia.jpg" alt="" loading="lazy">
+        </picture>
+      </div>
+      <div class="hero-slide">
+        <picture>
+          <source media="(max-width: 760px)" srcset="assets/img/hero-restaurante-sm.jpg">
+          <img src="assets/img/hero-restaurante.jpg" alt="" loading="lazy">
+        </picture>
+      </div>
+      <div class="hero-slide">
+        <picture>
+          <source media="(max-width: 760px)" srcset="assets/img/hero-eventos-sm.jpg">
+          <img src="assets/img/hero-eventos.jpg" alt="" loading="lazy">
+        </picture>
+      </div>
       <div class="hero-scrim"></div>
     </div>
 
@@ -306,7 +326,7 @@
         <p data-i18n="sp3.text">A 30 metros, con el mar tranquilo de Manzanillo.</p>
       </article>
       <article class="space-card">
-        <div class="space-img"><img src="assets/img/esp-casa.jpg" alt="La piscina entre palmeras, con el mar al fondo" loading="lazy"></div>
+        <div class="space-img"><img src="assets/img/esp-casa.jpg" alt="Balcón de madera de la casa entre buganvilias" loading="lazy"></div>
         <h3 data-i18n="sp4.title">La casa</h3>
         <p data-i18n="sp4.text">Madera, palma y color Caribe en cada rincón.</p>
       </article>
@@ -342,7 +362,7 @@
         </article>
 
         <article class="plan-panel" id="panel-2" role="tabpanel" hidden>
-          <div class="plan-img"><img src="assets/img/plan-pasadia.jpg" alt="Niños jugando en la piscina del hotel" loading="lazy"></div>
+          <div class="plan-img"><img src="assets/img/plan-pasadia.jpg" alt="Huésped con un cóctel junto a la piscina" loading="lazy"></div>
           <div class="plan-body">
             <h3 data-i18n="plan.pasadia">Pasadía</h3>
             <p data-i18n="p2.text">Un día completo de piscina, rooftop y playa, con la carta del restaurante disponible todo el día.</p>
@@ -354,7 +374,7 @@
         </article>
 
         <article class="plan-panel" id="panel-3" role="tabpanel" hidden>
-          <div class="plan-img"><img src="assets/img/plan-cumpleanos.jpg" alt="Brindis con cócteles sobre la mesa del restaurante" loading="lazy"></div>
+          <div class="plan-img"><img src="assets/img/plan-cumpleanos.jpg" alt="Niños jugando en la piscina del hotel" loading="lazy"></div>
           <div class="plan-body">
             <h3 data-i18n="plan.cumpleanos">Cumpleaños</h3>
             <p data-i18n="p3.text">Celebra frente al mar: decoración, cena en la terraza y la piscina para el grupo. Armamos el plan a tu medida.</p>
@@ -383,7 +403,7 @@
   <!-- ============ RESTAURANTE ============ -->
   <section class="resto" id="restaurante">
     <div class="resto-media parallax">
-      <img src="assets/img/restaurante.jpg" alt="Plato del restaurante Pal-Mar servido en la terraza" loading="lazy">
+      <img src="assets/img/resto-terraza.jpg" alt="Terraza del restaurante Pal-Mar con vista al mar" loading="lazy">
     </div>
     <div class="shell">
       <div class="resto-card reveal-up">
@@ -396,18 +416,54 @@
     </div>
   </section>
 
+  
+  <!-- ============ DE LA COCINA ============ -->
+  <section class="plates section">
+    <div class="shell">
+      <div class="plates-head reveal-up">
+        <div>
+          <p class="eyebrow" data-i18n="plates.eyebrow">De la cocina</p>
+          <h3 class="h-display" data-i18n="plates.title">Lo que sale del Pal-Mar</h3>
+        </div>
+        <p class="plates-note" data-i18n="plates.text">Pescado del día, fruta de la región, postres de la casa y cócteles frente a la piscina.</p>
+      </div>
+      <div class="plates-grid">
+        <figure class="plate">
+          <img src="assets/img/plato-principal.jpg" alt="Plato del día servido en la terraza" loading="lazy">
+          <figcaption data-i18n="plates.principal">Plato del día</figcaption>
+        </figure>
+        <figure class="plate">
+          <img src="assets/img/plato-brindis.jpg" alt="Brindis con cócteles sobre la mesa del restaurante" loading="lazy">
+          <figcaption data-i18n="plates.brindis">Para brindar</figcaption>
+        </figure>
+        <figure class="plate">
+          <img src="assets/img/plato-postre.jpg" alt="Postre casero del restaurante Pal-Mar" loading="lazy">
+          <figcaption data-i18n="plates.postre">Postre de la casa</figcaption>
+        </figure>
+        <figure class="plate">
+          <img src="assets/img/plato-fruta.jpg" alt="Plato de fruta fresca frente al mar" loading="lazy">
+          <figcaption data-i18n="plates.fruta">Fruta fresca</figcaption>
+        </figure>
+        <figure class="plate">
+          <img src="assets/img/plato-coctel.jpg" alt="Cóctel servido junto a la piscina" loading="lazy">
+          <figcaption data-i18n="plates.coctel">Cócteles en la piscina</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
   <!-- ============ GALERÍA ============ -->
   <section class="gallery section" id="galeria">
     <div class="shell">
       <h2 class="h-display reveal-up" data-i18n="gallery.title">Así se vive Palmera</h2>
 
       <div class="gallery-grid">
-        <figure class="g-item"><img src="assets/img/g1-cocteles.jpg" alt="Cóctel servido junto a la piscina" loading="lazy"></figure>
-        <figure class="g-item"><img src="assets/img/g2-postre.jpg" alt="Postre casero del restaurante Pal-Mar" loading="lazy"></figure>
-        <figure class="g-item"><img src="assets/img/g3-fruta.jpg" alt="Plato de fruta fresca en la terraza frente al mar" loading="lazy"></figure>
+        <figure class="g-item"><img src="assets/img/g1-jardin.jpg" alt="Jardín y tumbona junto a la piscina del hotel" loading="lazy"></figure>
+        <figure class="g-item"><img src="assets/img/g2-piscina.jpg" alt="Zona de piscina con terraza de madera y vegetación" loading="lazy"></figure>
+        <figure class="g-item"><img src="assets/img/g3-palmeras.jpg" alt="Palmeras y techos de palma sobre la piscina" loading="lazy"></figure>
         <figure class="g-item"><img src="assets/img/g4-playa.jpg" alt="Atardecer en la playa de Manzanillo del Mar" loading="lazy"></figure>
-        <figure class="g-item"><img src="assets/img/g5-palmeras.jpg" alt="Palmeras y vegetación alrededor de la piscina" loading="lazy"></figure>
-        <figure class="g-item"><img src="assets/img/g6-kiosco.jpg" alt="Balcón de madera del hotel entre buganvilias" loading="lazy"></figure>
+        <figure class="g-item"><img src="assets/img/g5-mar.jpg" alt="La orilla del mar en Manzanillo del Mar" loading="lazy"></figure>
+        <figure class="g-item"><img src="assets/img/g6-rooftop.jpg" alt="Hamaca en el rooftop del hotel frente al mar" loading="lazy"></figure>
       </div>
 
       <a class="link-arrow ig-link" href="https://www.instagram.com/palmerabhotel/" target="_blank" rel="noopener">

@@ -92,17 +92,61 @@ Hola Palmera Beach Hotel, quiero cotizar.
 
 ## Imágenes
 
-Son las que entregó la clienta (carpeta "Fotos palmera web"). Las originales
-vienen de teléfono, en vertical y en HEIC/PNG/JPEG; se convirtieron a JPEG y se
-recortaron por destino: 2000×1000 para el hero, 3:4 para "Los espacios" y el
-bloque del hotel, 2:1 para los planes y 4:5 / 3:2 para la galería.
+Son las que entregó la clienta (carpeta "Fotos palmera web"): **18 originales**, de
+teléfono, en vertical y en HEIC/PNG/JPEG. De ahí salen las **30 que usa el sitio**.
+Todas las originales están en uso; ninguna quedó fuera.
 
-El texto del hero va sobre la foto, así que el `.hero-scrim` lleva un refuerzo
-lateral sobre la columna del texto. El contraste del crema (`#FFF7D6`) contra la
-imagen oscurecida se midió celda por celda (rejilla de 60) en las cuatro fotos:
-el peor caso queda entre **6,3:1 y 8,7:1**, por encima del mínimo AA de 4,5:1.
-Si se cambia una foto del hero conviene volver a medirlo, sobre todo si tiene
-zonas muy claras en la mitad izquierda.
+`tools/build-img.sh` reproduce el recorte completo. Necesita ffmpeg y la carpeta
+de originales:
+
+```bash
+tools/build-img.sh /ruta/a/ffmpeg /ruta/a/originales assets/img
+```
+
+### El hero cambia de recorte según la pantalla
+
+Un recorte 2:1 se ve bien en escritorio y fatal en un teléfono, así que cada slide
+tiene dos archivos y los sirve `<picture>`:
+
+| | archivo | tamaño |
+|---|---|---|
+| Escritorio | `hero-*.jpg` | 2000×1000 |
+| ≤ 760 px | `hero-*-sm.jpg` | 1100×1430 |
+
+### Contraste del texto sobre la foto
+
+El texto del hero va encima de la imagen, así que el velo (`.hero-scrim`) está
+medido, no estimado: rejilla de celdas sobre la zona del texto, mezcla de cada
+celda con el alfa del degradado en ese punto y relación WCAG contra el crema
+`#FFF7D6`. El peor caso de cada foto:
+
+| | escritorio | móvil |
+|---|---|---|
+| Alojamiento | 8,02:1 | 9,35:1 |
+| Pasadía | 9,80:1 | 8,88:1 |
+| Restaurante | 8,84:1 | 7,55:1 |
+| Eventos | 7,12:1 | 7,70:1 |
+
+Las dos vistas necesitan velos distintos: en escritorio el texto ocupa una columna
+a la izquierda, así que el degradado se refuerza en horizontal; en móvil ocupa todo
+el ancho y el refuerzo lateral no serviría, así que pasa a ser vertical y parejo.
+**Si se cambia una foto del hero hay que volver a medir**, sobre todo si tiene
+zonas muy claras donde cae el texto: la foto que había antes para Pasadía tenía una
+pared blanca a pleno sol justo ahí y se quedaba en 3,85:1.
+
+### La fogata
+
+Chrome compone en verde el núcleo de la llama cuando hay una capa translúcida
+encima. No es el CSS: pasa con un `<img>` normal y un overlay plano, con
+`background: rgba`, con `opacity` en el overlay y con `opacity` en la imagen.
+Es la composición de altas luces quemadas. Bajarle las luces a la foto
+(`curves` + algo menos de saturación, ver `FOGATA` en el script) lo reduce a un
+matiz apenas visible. Esas dos imágenes van en 4:4:4; el resto en 4:2:0.
+
+### Peso
+
+Unos 4,1 MB por vista (escritorio o móvil, no los dos). Solo el primer hero se
+carga de entrada; todo lo demás es `loading="lazy"`.
 
 ## Correcciones de la clienta ya aplicadas
 

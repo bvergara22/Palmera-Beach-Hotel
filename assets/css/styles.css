@@ -379,6 +379,35 @@ svg{fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-l
 .resto-card p{color:var(--muted);margin-top:1.1em}
 .resto-card .link-arrow{margin-top:1.8em}
 
+
+/* ---------- De la cocina (platos del Pal-Mar) ---------- */
+.plates-head{
+  display:flex;align-items:flex-end;justify-content:space-between;
+  gap:clamp(18px,3vw,56px);flex-wrap:wrap;
+  margin-bottom:clamp(24px,2.8vw,44px);
+}
+.plates-head .h-display{font-size:clamp(1.7rem,2.9vw,3.1rem);line-height:1.12}
+.plates-note{color:var(--muted);max-width:40ch;font-size:.98rem;line-height:1.8}
+.plates-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(10px,1.1vw,18px)}
+.plate{
+  margin:0;position:relative;overflow:hidden;
+  border-radius:var(--radius);background:var(--bg-soft);
+}
+.plate img{
+  display:block;width:100%;aspect-ratio:4/5;object-fit:cover;
+  transition:transform 1.1s var(--ease);
+}
+.plate:hover img{transform:scale(1.06)}
+.plate figcaption{
+  position:absolute;inset:auto 0 0 0;
+  padding:2.6em 1.1em .95em;
+  font-size:.82rem;letter-spacing:.01em;color:#fff;
+  /* El degradado va dentro del contenedor y no sobre una foto completa,
+     así que aquí sí basta con oscurecer el pie. */
+  background:linear-gradient(180deg,rgba(7,26,36,0) 0%,rgba(7,26,36,.82) 72%,rgba(7,26,36,.92) 100%);
+  pointer-events:none;
+}
+
 /* ---------- Galería ---------- */
 .gallery .h-display{font-size:clamp(2rem,3.6vw,4.1rem);margin-bottom:clamp(28px,3.2vw,52px)}
 .gallery-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:clamp(10px,1.1vw,18px)}
@@ -457,10 +486,34 @@ svg{fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-l
   .booking-field:nth-child(3){border-left:0;padding-left:0}
   .booking-submit{grid-column:1/-1;width:100%}
   .about-grid,.plans-grid,.location-grid{grid-template-columns:1fr}
+
+  /* Las fotos de los planes son 3:2; en pantallas estrechas el contenedor
+     deja de ser una franja de 2:1 y se acerca al recorte original. */
+  .plan-img{aspect-ratio:3/2}
+  .plates-grid{grid-template-columns:repeat(2,1fr)}
+  .plate:last-child{grid-column:span 2}
+  .plate:last-child img{aspect-ratio:3/2}
+  .plates-head{display:block}
+  .plates-note{margin-top:1em;max-width:none}
+
   .about-media{max-width:620px;margin-inline:auto;width:100%}
   .gallery-grid{grid-template-columns:repeat(4,1fr)}
   .g-item:nth-child(4),.g-item:nth-child(5){grid-column:span 2;aspect-ratio:4/5}
   .g-item:nth-child(6){display:block;grid-column:span 4;aspect-ratio:16/7}
+}
+
+@media (max-width:760px){
+  /* En móvil el texto del hero ocupa todo el ancho, así que el refuerzo
+     lateral del scrim deja de cubrirlo: pasa a un velo vertical parejo.
+     Medido sobre las cuatro fotos verticales, el peor caso queda en 7,4:1. */
+  .hero-scrim{
+    background:linear-gradient(180deg,
+      rgba(7,26,36,.62) 0%,
+      rgba(7,26,36,.62) 30%,
+      rgba(7,26,36,.70) 62%,
+      rgba(9,32,43,.74) 86%,
+      var(--bg) 100%);
+  }
 }
 
 @media (max-width:860px){

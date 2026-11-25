@@ -87,6 +87,14 @@ window.PALMERA_I18N = {
     'resto.text': 'Cocina del Caribe servida en la terraza. Desayuno, almuerzo y cena para huéspedes y visitantes, con gaseosas y cerveza bien frías.',
     'resto.link': 'Pedir la carta',
 
+    'plates.eyebrow': 'De la cocina',
+    'plates.title': 'Lo que sale del Pal-Mar',
+    'plates.text': 'Pescado del día, fruta de la región, postres de la casa y cócteles frente a la piscina.',
+    'plates.principal': 'Plato del día',
+    'plates.brindis': 'Para brindar',
+    'plates.postre': 'Postre de la casa',
+    'plates.fruta': 'Fruta fresca',
+    'plates.coctel': 'Cócteles en la piscina',
     'gallery.title': 'Así se vive Palmera',
     'gallery.link': 'Ver más en @palmerabhotel',
 
@@ -191,6 +199,14 @@ window.PALMERA_I18N = {
     'resto.text': 'Caribbean cooking served on the terrace. Breakfast, lunch and dinner for guests and visitors, with ice-cold drinks and beer.',
     'resto.link': 'Ask for the menu',
 
+    'plates.eyebrow': 'From the kitchen',
+    'plates.title': "What comes out of Pal-Mar",
+    'plates.text': 'Catch of the day, local fruit, homemade desserts and cocktails by the pool.',
+    'plates.principal': 'Dish of the day',
+    'plates.brindis': 'Something to toast with',
+    'plates.postre': 'House dessert',
+    'plates.fruta': 'Fresh fruit',
+    'plates.coctel': 'Cocktails by the pool',
     'gallery.title': 'Life at Palmera',
     'gallery.link': 'See more on @palmerabhotel',
 
