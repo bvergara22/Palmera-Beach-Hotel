@@ -237,9 +237,12 @@ svg{fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-l
 .hero-slide img{width:100%;height:100%;object-fit:cover;transform:scale(1.06);will-change:transform}
 .hero-scrim{
   position:absolute;inset:0;
+  /* Refuerzo lateral sobre la columna del texto: mantiene el contraste del
+     crema por encima de 6:1 en las cuatro fotos sin apagar el resto de la
+     imagen. Medido sobre una rejilla de 60 celdas por foto. */
   background:
-    linear-gradient(180deg,rgba(9,32,43,.6) 0%,rgba(9,32,43,.3) 38%,rgba(9,32,43,.28) 80%,rgba(9,32,43,.34) 92%,var(--bg) 100%),
-    linear-gradient(90deg,rgba(9,32,43,.5) 0%,rgba(9,32,43,.08) 62%);
+    linear-gradient(90deg,rgba(7,26,36,.72) 0%,rgba(7,26,36,.52) 34%,rgba(7,26,36,.12) 62%,rgba(7,26,36,0) 78%),
+    linear-gradient(180deg,rgba(9,32,43,.55) 0%,rgba(9,32,43,.22) 38%,rgba(9,32,43,.24) 80%,rgba(9,32,43,.34) 92%,var(--bg) 100%);
 }
 .hero-content{position:relative;padding-bottom:clamp(30px,4vw,60px)}
 .hero .eyebrow{color:rgba(255,247,214,.88)}

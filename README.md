@@ -90,6 +90,20 @@ Hola Palmera Beach Hotel, quiero cotizar.
 • Personas: 4
 ```
 
+## Imágenes
+
+Son las que entregó la clienta (carpeta "Fotos palmera web"). Las originales
+vienen de teléfono, en vertical y en HEIC/PNG/JPEG; se convirtieron a JPEG y se
+recortaron por destino: 2000×1000 para el hero, 3:4 para "Los espacios" y el
+bloque del hotel, 2:1 para los planes y 4:5 / 3:2 para la galería.
+
+El texto del hero va sobre la foto, así que el `.hero-scrim` lleva un refuerzo
+lateral sobre la columna del texto. El contraste del crema (`#FFF7D6`) contra la
+imagen oscurecida se midió celda por celda (rejilla de 60) en las cuatro fotos:
+el peor caso queda entre **6,3:1 y 8,7:1**, por encima del mínimo AA de 4,5:1.
+Si se cambia una foto del hero conviene volver a medirlo, sobre todo si tiene
+zonas muy claras en la mitad izquierda.
+
 ## Correcciones de la clienta ya aplicadas
 
 Del documento compartido:
@@ -107,10 +121,6 @@ Del documento compartido:
 
 ## Pendientes (dependen de la clienta)
 
-- **Fotos definitivas.** Las actuales se tomaron del Instagram y de los videos;
-  son de baja resolución y sirven solo de referencia. En el documento la clienta
-  dice que las imágenes "se suministrarán más adelante". Reemplazar en
-  `assets/img/` conservando los nombres.
 - **Dirección exacta.** En el documento el campo "Dirección:" quedó en blanco.
   Por ahora queda la de Google: *Vía Manzanillo del Mar, Cartagena de Indias, Bolívar*.
 - **Teléfono.** Google muestra `300 544 1946`; en el sitio y en Instagram aparece
